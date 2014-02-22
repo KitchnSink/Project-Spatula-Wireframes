@@ -7725,3 +7725,8 @@ th.hide-for-touch {
 .touch th.show-for-touch {
   display: table-cell !important;
 }
+
+/* line 42, ../_sass/scss/app.scss */
+.page-container {
+  padding-top: 15px;
+}

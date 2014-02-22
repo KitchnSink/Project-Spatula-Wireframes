@@ -2,13 +2,14 @@
 layout: default
 title: Project Spatula - Search Page
 ---
-{% include header_loggedout.html %}
+{% include header_loggedin.html %}
 <div class="content-container">
+  {% for item in (1..4) %}
   <div class="row">
     <div class="small-12 columns">
       {% include search_header.html %}
       <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-        {% for item in (1..16) %}
+        {% for item in (1..4) %}
           <li class="grid-item">
             {% include search_item.html %}
           </li>
@@ -16,4 +17,5 @@ title: Project Spatula - Search Page
       </ul>
     </div>
   </div>
+  {% endfor %}
 </div>
